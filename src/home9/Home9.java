@@ -34,14 +34,15 @@ public class Home9 extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        user = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        pass = new javax.swing.JPasswordField();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        message = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
 
@@ -55,22 +56,22 @@ public class Home9 extends javax.swing.JFrame {
         jLabel1.setText("User  ");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 62, -1));
 
-        jTextField1.setBackground(new java.awt.Color(32, 33, 35));
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setBorder(null);
-        jTextField1.setCaretColor(new java.awt.Color(255, 255, 255));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        user.setBackground(new java.awt.Color(32, 33, 35));
+        user.setForeground(new java.awt.Color(255, 255, 255));
+        user.setBorder(null);
+        user.setCaretColor(new java.awt.Color(255, 255, 255));
+        user.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                userActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 300, 20));
+        jPanel2.add(user, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 300, 20));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 300, -1));
 
-        jPasswordField1.setBackground(new java.awt.Color(32, 33, 35));
-        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setBorder(null);
-        jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 310, -1));
+        pass.setBackground(new java.awt.Color(32, 33, 35));
+        pass.setForeground(new java.awt.Color(255, 255, 255));
+        pass.setBorder(null);
+        jPanel2.add(pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 310, -1));
         jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, 310, -1));
 
         jLabel2.setForeground(new java.awt.Color(51, 51, 55));
@@ -100,6 +101,9 @@ public class Home9 extends javax.swing.JFrame {
         jLabel7.setText("Design and Create amazing clothes");
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(84, 340, 290, 30));
 
+        message.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel2.add(message, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 240, 20));
+
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 470, 490));
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
@@ -113,15 +117,26 @@ public class Home9 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_userActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        dispose();
-        principal view = new principal();
-        view.setVisible(true);
+        String userName = user.getText();
+        String password = pass.getText();
+        System.out.println(userName+"    "+password);
+        if(userName.equalsIgnoreCase("root") && password.equalsIgnoreCase("1234")){
+            dispose();
+            principal view = new principal();
+            view.setVisible(true);
+        }else{
+            message.setText("USUARIO INVALIDO, INTENTE DE NUEVO");
+            user.setText("");
+            pass.setText("");
+        }
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -168,9 +183,10 @@ public class Home9 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel message;
+    private javax.swing.JPasswordField pass;
+    private javax.swing.JTextField user;
     // End of variables declaration//GEN-END:variables
 }
