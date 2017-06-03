@@ -181,7 +181,7 @@ public class pedidos extends javax.swing.JFrame {
         jButton3.setBorder(null);
         jButton3.setContentAreaFilled(false);
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 370, 180, 50));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 180, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
