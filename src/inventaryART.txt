@@ -1,0 +1,2 @@
+Iniciado,1,camisa,30,50,ropa,1,2017/06/02
+Iniciado,1,camisa,30,45,ropa,10,2017/06/02

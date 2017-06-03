@@ -42,21 +42,21 @@ public class inventario extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        id = new javax.swing.JTextField();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        desc = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
-        jTextField3 = new javax.swing.JTextField();
+        cantidad = new javax.swing.JTextField();
         jSeparator5 = new javax.swing.JSeparator();
         jLabel13 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        tipo = new javax.swing.JTextField();
+        costo = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
-        jTextField6 = new javax.swing.JTextField();
+        precio = new javax.swing.JTextField();
         jSeparator7 = new javax.swing.JSeparator();
         jLabel15 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
@@ -65,7 +65,6 @@ public class inventario extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jEditorPane1);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\iconsproyectos\\Edit Property_48px_1.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -99,6 +98,11 @@ public class inventario extends javax.swing.JFrame {
         jButton2.setText("Save");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 530, 120, -1));
 
         jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -106,6 +110,11 @@ public class inventario extends javax.swing.JFrame {
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Cancel_48px_1.png"))); // NOI18N
         jButton3.setText("Cancel");
         jButton3.setBorder(null);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 530, 130, -1));
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 470, 490, 10));
 
@@ -115,67 +124,61 @@ public class inventario extends javax.swing.JFrame {
         jLabel2.setText("Formulario ");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 15, 210, 40));
 
-        jTextField1.setBackground(new java.awt.Color(214, 217, 223));
-        jTextField1.setBorder(null);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 490, -1));
+        id.setBackground(new java.awt.Color(214, 217, 223));
+        id.setBorder(null);
+        getContentPane().add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 490, -1));
         getContentPane().add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 490, -1));
 
         jLabel4.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Codigo Producto");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Descripción");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Cantidad");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, -1, -1));
 
-        jTextField2.setBackground(new java.awt.Color(214, 217, 223));
-        jTextField2.setBorder(null);
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 490, -1));
+        desc.setBackground(new java.awt.Color(214, 217, 223));
+        desc.setBorder(null);
+        getContentPane().add(desc, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 490, -1));
         getContentPane().add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 490, -1));
 
-        jTextField3.setBackground(new java.awt.Color(214, 217, 223));
-        jTextField3.setBorder(null);
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 490, -1));
+        cantidad.setBackground(new java.awt.Color(214, 217, 223));
+        cantidad.setBorder(null);
+        getContentPane().add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 490, -1));
         getContentPane().add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 490, -1));
 
         jLabel13.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Costo");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, -1, -1));
 
-        jTextField4.setBackground(new java.awt.Color(214, 217, 223));
-        jTextField4.setBorder(null);
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 490, -1));
+        tipo.setBackground(new java.awt.Color(214, 217, 223));
+        tipo.setBorder(null);
+        getContentPane().add(tipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 490, -1));
 
-        jTextField5.setBackground(new java.awt.Color(214, 217, 223));
-        jTextField5.setBorder(null);
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 490, -1));
+        costo.setBackground(new java.awt.Color(214, 217, 223));
+        costo.setBorder(null);
+        getContentPane().add(costo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 490, -1));
 
         jLabel14.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Precio");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, -1));
         getContentPane().add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, 490, -1));
 
-        jTextField6.setBackground(new java.awt.Color(214, 217, 223));
-        jTextField6.setBorder(null);
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 315, 490, -1));
+        precio.setBackground(new java.awt.Color(214, 217, 223));
+        precio.setBorder(null);
+        getContentPane().add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 315, 490, -1));
         getContentPane().add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 392, 490, -1));
 
         jLabel15.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("Tipo");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, -1));
@@ -198,6 +201,35 @@ public class inventario extends javax.swing.JFrame {
         view.setVisible(true); 
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        String idVal = id.getText();
+        String description = desc.getText();
+        String cost = costo.getText();
+        String price = precio.getText();
+        String type = tipo.getText();
+        String amount = cantidad.getText();
+        
+        inventary.Inventary backLog = new inventary.Inventary();
+        backLog.newArticle("Iniciado", idVal, description, cost, price, type, amount);
+        
+        clearValues();
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        clearValues();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    public void clearValues (){
+        id.setText("");
+        desc.setText("");
+        costo.setText("");
+        precio.setText("");
+        tipo.setText("");
+        cantidad.setText("");
+    }
     /**
      * @param args the command line arguments
      */
@@ -234,6 +266,10 @@ public class inventario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField cantidad;
+    private javax.swing.JTextField costo;
+    private javax.swing.JTextField desc;
+    private javax.swing.JTextField id;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -256,12 +292,8 @@ public class inventario extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField precio;
+    private javax.swing.JTextField tipo;
     // End of variables declaration//GEN-END:variables
 }
