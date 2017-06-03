@@ -98,7 +98,7 @@ public class inventario extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(222, 81, 69));
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\iconsproyectos\\Save_48px.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\git\\projects\\university\\src\\images\\Save_48px.png")); // NOI18N
         jButton2.setText("Save");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
@@ -106,7 +106,7 @@ public class inventario extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(222, 81, 69));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\iconsproyectos\\Cancel_48px_1.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\git\\projects\\university\\src\\images\\Cancel_48px_1.png")); // NOI18N
         jButton3.setText("Cancel");
         jButton3.setBorder(null);
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 530, 130, -1));
@@ -188,7 +188,7 @@ public class inventario extends javax.swing.JFrame {
         getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 490, -1));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\iconsproyectos\\Edit Property_48px_1.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\git\\projects\\university\\src\\images\\Edit Property_48px_1.png")); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, -1, -1));
 
         pack();
