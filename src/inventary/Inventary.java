@@ -21,11 +21,11 @@ import java.util.Date;
  */
 public class Inventary {
 
-    private File ARTICLES = new File("/Users/jake/NetBeansProjects/Inventary/src/inventary/ART.txt");
-    private File ORDERS = new File("/Users/jake/NetBeansProjects/Inventary/src/inventary/ORD.txt");
-    private File DELIVERIES = new File("/Users/jake/NetBeansProjects/Inventary/src/inventary/DEL.txt");
-    private File DEVOLUTION = new File("/Users/jake/NetBeansProjects/Inventary/src/inventary/DEV.txt");
-    private File LOGIN = new File("/Users/jake/NetBeansProjects/Inventary/src/inventary/LGI.txt");
+    private File ARTICLES = new File("/Users/jake/NetBeansProjects/Final2/src/inventary/ART.txt");
+    private File ORDERS = new File("/Users/jake/NetBeansProjects/Final2/src/inventary/ORD.txt");
+    private File DELIVERIES = new File("/Users/jake/NetBeansProjects/Final2/src/inventary/DEL.txt");
+    private File DEVOLUTION = new File("/Users/jake/NetBeansProjects/Final2/src/inventary/DEV.txt");
+    private File LOGIN = new File("/Users/jake/NetBeansProjects/Final2/src/inventary/LGI.txt");
     
     /**
      * @param args the command line arguments
