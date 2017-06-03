@@ -55,7 +55,7 @@ public class sustituciones extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(244, 67, 54));
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\git\\projects\\university\\src\\images\\Save_48px.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Save_48px.png"))); // NOI18N
         jButton1.setText("Generar Cambio");
         jButton1.setBorder(null);
         jButton1.setContentAreaFilled(false);
@@ -63,10 +63,10 @@ public class sustituciones extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 180, 50));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\git\\projects\\university\\src\\images\\Player Change_48px.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Player Change_48px.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, -1, 40));
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\iconsproyectos\\Back_48px.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Back_48px.png"))); // NOI18N
         jButton2.setBorder(null);
         jButton2.setContentAreaFilled(false);
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -79,7 +79,7 @@ public class sustituciones extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(244, 67, 54));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\N3id3r\\Desktop\\git\\projects\\university\\src\\images\\Cancel_48px_1.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Cancel_48px_1.png"))); // NOI18N
         jButton3.setText("Cancel");
         jButton3.setBorder(null);
         jButton3.setContentAreaFilled(false);

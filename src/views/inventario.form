@@ -64,7 +64,7 @@
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\N3id3r\Desktop\iconsproyectos\Back_48px.png"/>
+          <Image iconType="3" name="/images/Back_48px.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
@@ -99,7 +99,7 @@
           <Color blue="45" green="51" red="de" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\N3id3r\Desktop\git\projects\university\src\images\Save_48px.png"/>
+          <Image iconType="3" name="/images/Save_48px.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Save"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -122,7 +122,7 @@
           <Color blue="45" green="51" red="de" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\N3id3r\Desktop\git\projects\university\src\images\Cancel_48px_1.png"/>
+          <Image iconType="3" name="/images/Cancel_48px_1.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Cancel"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -405,7 +405,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\N3id3r\Desktop\git\projects\university\src\images\Edit Property_48px_1.png"/>
+          <Image iconType="3" name="/images/Edit Property_48px_1.png"/>
         </Property>
       </Properties>
       <Constraints>

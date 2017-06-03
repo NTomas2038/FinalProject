@@ -34,7 +34,7 @@
           <Color blue="36" green="43" red="f4" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\N3id3r\Desktop\git\projects\university\src\images\Save_48px.png"/>
+          <Image iconType="3" name="/images/Save_48px.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Generar Cambio"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -55,7 +55,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\N3id3r\Desktop\git\projects\university\src\images\Player Change_48px.png"/>
+          <Image iconType="3" name="/images/Player Change_48px.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -67,7 +67,7 @@
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\N3id3r\Desktop\iconsproyectos\Back_48px.png"/>
+          <Image iconType="3" name="/images/Back_48px.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
@@ -95,7 +95,7 @@
           <Color blue="36" green="43" red="f4" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\N3id3r\Desktop\git\projects\university\src\images\Cancel_48px_1.png"/>
+          <Image iconType="3" name="/images/Cancel_48px_1.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Cancel"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
