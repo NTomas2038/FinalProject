@@ -48,13 +48,13 @@ public class pedidos extends javax.swing.JFrame {
         noPedido = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
-        nombreCliente = new javax.swing.JTextField();
+        nameClient = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
         direccion = new javax.swing.JTextField();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
-        telefono = new javax.swing.JTextField();
+        producto = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
         nit = new javax.swing.JTextField();
@@ -62,12 +62,12 @@ public class pedidos extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        telefono1 = new javax.swing.JTextField();
+        total = new javax.swing.JTextField();
+        tel = new javax.swing.JTextField();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnSave = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -98,11 +98,11 @@ public class pedidos extends javax.swing.JFrame {
         jLabel1.setText("Número de pedido:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, 38));
 
-        nombreCliente.setBackground(new java.awt.Color(32, 33, 35));
-        nombreCliente.setForeground(new java.awt.Color(255, 255, 255));
-        nombreCliente.setBorder(null);
-        nombreCliente.setOpaque(false);
-        getContentPane().add(nombreCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 114, 573, -1));
+        nameClient.setBackground(new java.awt.Color(32, 33, 35));
+        nameClient.setForeground(new java.awt.Color(255, 255, 255));
+        nameClient.setBorder(null);
+        nameClient.setOpaque(false);
+        getContentPane().add(nameClient, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 114, 573, -1));
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 135, 573, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -122,11 +122,11 @@ public class pedidos extends javax.swing.JFrame {
         jLabel3.setText("Dirección:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 166, 156, -1));
 
-        telefono.setBackground(new java.awt.Color(32, 33, 35));
-        telefono.setForeground(new java.awt.Color(255, 255, 255));
-        telefono.setBorder(null);
-        telefono.setOpaque(false);
-        getContentPane().add(telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 300, 21));
+        producto.setBackground(new java.awt.Color(32, 33, 35));
+        producto.setForeground(new java.awt.Color(255, 255, 255));
+        producto.setBorder(null);
+        producto.setOpaque(false);
+        getContentPane().add(producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 300, 21));
         getContentPane().add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 223, 350, 10));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -155,13 +155,13 @@ public class pedidos extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Precio Total:");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(521, 341, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 341, 102, 20));
+        getContentPane().add(total, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 341, 102, 20));
 
-        telefono1.setBackground(new java.awt.Color(32, 33, 35));
-        telefono1.setForeground(new java.awt.Color(255, 255, 255));
-        telefono1.setBorder(null);
-        telefono1.setOpaque(false);
-        getContentPane().add(telefono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 204, 300, 21));
+        tel.setBackground(new java.awt.Color(32, 33, 35));
+        tel.setForeground(new java.awt.Color(255, 255, 255));
+        tel.setBorder(null);
+        tel.setOpaque(false);
+        getContentPane().add(tel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 204, 300, 21));
         getContentPane().add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 360, 10));
 
         jLabel8.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
@@ -174,14 +174,19 @@ public class pedidos extends javax.swing.JFrame {
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Banknotes_48px.png"))); // NOI18N
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 290, 70, 50));
 
-        jButton3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(51, 255, 51));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Ok_48px.png"))); // NOI18N
-        jButton3.setText("OK");
-        jButton3.setBorder(null);
-        jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 180, 50));
+        btnSave.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        btnSave.setForeground(new java.awt.Color(51, 255, 51));
+        btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Ok_48px.png"))); // NOI18N
+        btnSave.setText("OK");
+        btnSave.setBorder(null);
+        btnSave.setContentAreaFilled(false);
+        btnSave.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 180, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -193,6 +198,28 @@ public class pedidos extends javax.swing.JFrame {
         view.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        // TODO add your handling code here:
+        String orderNumber = noPedido.getText();
+        String clientName = nameClient.getText();
+        String direction = direccion.getText();
+        String phone = tel.getText();
+        String nitC = nit.getText();
+        String totalPrice = total.getText();
+        
+        inventary.Inventary backLog = new inventary.Inventary();
+        backLog.newOrder("1", orderNumber, clientName, direction, phone, nitC, "01", "30", totalPrice, "5/06/2017");
+        clearValues();
+    }//GEN-LAST:event_btnSaveActionPerformed
+
+    public void clearValues (){
+        noPedido.setText("");
+        nameClient.setText("");
+        direccion.setText("");
+        tel.setText("");
+        nit.setText("");
+        total.setText("");
+    }
     /**
      * @param args the command line arguments
      */
@@ -229,9 +256,9 @@ public class pedidos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSave;
     private javax.swing.JTextField direccion;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -247,11 +274,11 @@ public class pedidos extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField nameClient;
     private javax.swing.JTextField nit;
     private javax.swing.JTextField noPedido;
-    private javax.swing.JTextField nombreCliente;
-    private javax.swing.JTextField telefono;
-    private javax.swing.JTextField telefono1;
+    private javax.swing.JTextField producto;
+    private javax.swing.JTextField tel;
+    private javax.swing.JTextField total;
     // End of variables declaration//GEN-END:variables
 }
